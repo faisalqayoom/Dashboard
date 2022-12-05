@@ -1,0 +1,16 @@
+.message {
+  color: red;
+  margin-bottom: 0;
+  background-color: rgb(27 66 36);
+}
+
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.form-container {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  background-color: rgb(57, 81, 68) !important;
+}

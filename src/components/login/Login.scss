@@ -1,0 +1,25 @@
+.loginform {
+  width: 50% !important;
+  padding: 70px;
+  background-color: white;
+  box-shadow: 2px 4px 2px 2px rgb(215, 208, 208);
+}
+.after-container {
+  height: 100vh;
+}
+
+.login-icon {
+  font-size: 30px;
+  border-radius: 1px solid;
+  align-items: center;
+  text-align: center;
+  color: #157347;
+}
+.errorMessage {
+  color: red;
+  font-size: 15px;
+}
+.admin-icon {
+  margin-right: 8px;
+  font-size: 40px;
+}

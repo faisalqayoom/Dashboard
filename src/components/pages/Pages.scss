@@ -1,0 +1,39 @@
+.button-design {
+  margin-left: auto;
+}
+.addSt-btn {
+  border: none;
+  border-radius: 15px;
+  background-color: #3c799f;
+  color: white;
+}
+.form {
+  border-radius: 30px;
+  box-shadow: 2px 2px 2px 1px #795548;
+}
+.form-label {
+  color: white;
+  font-size: 17px;
+}
+.delete-icon {
+  font-size: 25px;
+  color: rgb(237, 76, 76);
+  margin-right: 15px;
+}
+.edit-icon {
+  font-size: 20px;
+  color: green;
+}
+.add-staff-student:hover {
+  color: rgb(6, 40, 61) !important;
+  background-color: rgb(195, 186, 186);
+  border-radius: 30px;
+}
+.add-staff-student {
+  border-radius: 20px;
+  background-color: rgb(6, 40, 61);
+  color: white;
+}
+.student-Submit-btn {
+  margin-left: auto;
+}
