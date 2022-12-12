@@ -1,12 +1,18 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Login.scss";
-import { BsAppIndicator, BsFillPersonFill } from "react-icons/bs";
+import { RiAdminFill, RiLoginCircleFill } from "react-icons/ri";
+import { MdRemoveRedEye } from "react-icons/md";
+import { AiFillEyeInvisible } from "react-icons/ai";
+
+import Button from "../button/Button";
 
 const LoginForm = () => {
   const defaultData = { email: "", password: "" };
   const [value, setValue] = useState(defaultData);
   const [error, seterror] = useState("");
+
+  const [isPasswordVisible, setIsPasswordVisible] = useState(false);
   const navigate = useNavigate();
 
   const handleonChange = (e) => {
@@ -42,19 +48,19 @@ const LoginForm = () => {
   };
 
   return (
-    <div className="container parent-div">
-      <div className="justify-content-center align-items-center d-flex after-container">
-        <form className="loginform d-block" onSubmit={handleOnSubmit}>
+    <div className="justify-content-center align-items-center d-flex w-100 h-100vh parent-div">
+      <div className="login-form-div">
+        <form className="loginform px-5 py-3" onSubmit={handleOnSubmit}>
           <div className="login-icon">
-            <p>Admin Login</p>
-            <BsFillPersonFill className="login-icon" />
+            {/* <p>Admin Login</p> */}
+            <RiAdminFill className="login-icon" />
             {error && <p className="errorMessage">{error}</p>}
           </div>
           <div className="form-group my-3">
-            <label>Email address</label>
+            {/* <label>Email address</label> */}
             <input
               type="email"
-              className="form-control"
+              className="form-control mb-4"
               id="EmailInput"
               name="email"
               aria-describedby="emailHelp"
@@ -67,10 +73,10 @@ const LoginForm = () => {
               {/*emailError*/}
             </small>
           </div>
-          <div className="form-group my-3">
-            <label>Password</label>
+          <div className="form-group my-3 d-flex">
+            {/* <label>Password</label> */}
             <input
-              type="password"
+              type={isPasswordVisible ? "text" : "password"}
               className="form-control"
               name="password"
               id="exampleInputPassword1"
@@ -79,24 +85,38 @@ const LoginForm = () => {
               onChange={handleonChange}
               // onChange={(event) => setPassword(event.target.value)}
             />
+
+            {isPasswordVisible ? (
+              <AiFillEyeInvisible
+                className="password-icon"
+                onClick={() => setIsPasswordVisible(!isPasswordVisible)}
+              />
+            ) : (
+              <MdRemoveRedEye
+                className="password-icon"
+                onClick={() => setIsPasswordVisible(!isPasswordVisible)}
+              />
+            )}
+
             <small id="passworderror" className="text-danger form-text">
               {/* {passwordError} */}
             </small>
           </div>
-          <div className="form-group form-check">
+          {/* <div className="form-group form-check">
             <input
               type="checkbox"
               className="form-check-input"
               id="exampleCheck1"
             />
             <label className="form-check-label">Check me out</label>
+          </div> */}
+          <div className="d-flex mt-3">
+            <Button
+              text="Submit"
+              className="submit-icon w-100 mt-3"
+              icon=<RiLoginCircleFill />
+            />
           </div>
-          <button
-            type="submit"
-            className="btn btn-success align-center w-100 px-5 mt-3"
-          >
-            Submit
-          </button>
         </form>
       </div>
     </div>

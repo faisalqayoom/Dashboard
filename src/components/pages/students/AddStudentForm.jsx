@@ -1,7 +1,8 @@
-import Button from "react-bootstrap/Button";
+// import Button from "react-bootstrap/Button";
 import Col from "react-bootstrap/Col";
 import Form from "react-bootstrap/Form";
 import Row from "react-bootstrap/Row";
+import Button from "../../../components/button/Button";
 
 const AddStudentForm = ({ value, handleOnChange, handleOnSubmit }) => {
   return (
@@ -86,13 +87,14 @@ const AddStudentForm = ({ value, handleOnChange, handleOnSubmit }) => {
             </Form.Group>
           </Row>
 
-          <Button
+          <Button text="Submit" className="btn-danger" />
+          {/* <Button
             className="btn btn-danger px-4 mt-3 student-Submit-btn"
             variant="primary"
             type="submit"
           >
             Submit
-          </Button>
+          </Button> */}
         </Form>
       </div>
     </>

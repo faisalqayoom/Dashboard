@@ -1,0 +1,186 @@
+@media (max-width: 768px) {
+  .row-container {
+    display: contents;
+  }
+  .form-group-staff {
+    margin-bottom: 20px;
+  }
+  .staff-go-back-button {
+    justify-content: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding-top: 15px;
+    padding-bottom: 20px;
+  }
+  .form-container {
+    padding-bottom: 15px !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    padding-top: 20px !important;
+    border-radius: 0px !important;
+    width: 100% !important;
+    background: #379237 !important;
+    // background-color: $light-green;
+  }
+
+  .animated-button {
+    margin: 2px;
+    // width: 100%;
+  }
+  .staff-form-submit-div {
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    // padding: 15px 20px;
+  }
+  .staff-form-submit-btn {
+    width: 80%;
+    margin-bottom: 10px;
+    border-radius: 30px;
+    // margin: 15px 20px;
+  }
+  .staff-form-parent-div {
+    margin-top: 30px;
+  }
+}
+@media (min-width: 769px) and (max-width: 992px) {
+  .row-container {
+    display: contents;
+  }
+  .staff-form-submit-div {
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    // padding: 15px 20px;
+  }
+  .staff-form-submit-btn {
+    width: 80%;
+    margin-bottom: 10px;
+    border-radius: 30px;
+    padding: 7px 7px;
+    // margin: 15px 20px;
+  }
+
+  .form-container {
+    width: 90%;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 0px !important;
+    background: #379237 !important;
+    margin-top: 0px !important;
+  }
+  .form-group-staff {
+    margin-bottom: 20px;
+  }
+  .staff-go-back-button {
+    justify-content: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 25px;
+  }
+  .animated-button {
+    margin-top: 15 px;
+    margin-bottom: 0px;
+
+    // padding: 15px 20px;
+  }
+  .staff-form-parent-div {
+    margin-top: 30px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1400px) {
+  .form-container {
+    width: 90%;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 0px !important;
+    background: #379237 !important;
+    margin-top: 0px !important;
+  }
+  .form-group-staff {
+    // margin-bottom: 50px;
+    padding: 30px;
+  }
+  .staff-form-submit-btn {
+    align-items: center;
+    width: 80%;
+    margin-bottom: 10px;
+    border-radius: 30px;
+    padding: 7px 7px;
+    // margin: 15px 20px;
+  }
+  .staff-form-submit-div {
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    // padding: 15px 20px;
+  }
+  .staff-go-back-button {
+    justify-content: center;
+    // align-items: center;
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 0px !important;
+  }
+  .animated-button {
+    margin-top: 20px;
+    margin-bottom: 0px;
+  }
+  .staff-form-parent-div {
+    margin-top: 30px;
+  }
+}
+@media (min-width: 1400px) {
+  .form-container {
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 0px !important;
+    background: #379237 !important;
+    margin-top: 0px !important;
+    // height: 0vh !important;
+  }
+  .form-group-staff {
+    // margin-bottom: 50px;
+    padding: 45px;
+  }
+  .staff-form-submit-btn {
+    align-items: center;
+    width: 80%;
+    margin-bottom: 10px;
+    border-radius: 30px;
+    padding: 7px 7px;
+    // margin: 15px 20px;
+  }
+  .staff-form-submit-div {
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    // padding: 15px 20px;
+  }
+  .staff-go-back-button {
+    justify-content: center;
+    // align-items: center;
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 0px !important;
+  }
+  .animated-button {
+    margin-top: 20px;
+    margin-bottom: 0px;
+  }
+  .staff-form-parent-div {
+    margin-top: 30px;
+  }
+}

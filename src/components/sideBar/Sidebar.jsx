@@ -17,15 +17,16 @@ const Sidebar = () => {
     <>
       <div
         style={{ display: "flex", height: "100vh", overflow: "scroll initial" }}
+        className= "sidebar-div"
       >
-        <CDBSidebar textColer="#fff" backgroundColor="rgb(6, 40, 61)">
+        <CDBSidebar textColer="#fff" backgroundColor="rgba(25, 135, 0.33)">
           <CDBSidebarHeader prefix={<i className="fa fa-bars fa-large"></i>}>
             <Link to="/dashboard" className="admin-icon-text d-flex ">
               <MdAccountCircle className="admin-icon" />
               <span className="admin-text">Admin</span>
             </Link>
           </CDBSidebarHeader>
-          <CDBSidebarContent className="sidebar-content">
+          <CDBSidebarContent className="sidebar-content content-sidebar">
             <CDBSidebarMenu>
               <Link to={`/dashboard`} className="">
                 <CDBSidebarMenuItem

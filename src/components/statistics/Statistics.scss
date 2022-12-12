@@ -1,7 +1,8 @@
+@import "../colors/Colors.scss";
 .allDetails {
   text-align: center;
   border: 1px solid;
-  background-color: #3c799f;
+  background-color: $special;
   color: white;
 }
 .studentDetails {

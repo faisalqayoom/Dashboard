@@ -1,19 +1,20 @@
 .loginform {
-  width: 50% !important;
-  padding: 70px;
-  background-color: white;
+  // width: 50% !important;
+  // padding: 70px;
+  background-color: rgb(242, 235, 235);
   box-shadow: 2px 4px 2px 2px rgb(215, 208, 208);
 }
-.after-container {
-  height: 100vh;
-}
 
+.parent-div {
+  height: 100vh;
+  background-color: azure;
+}
 .login-icon {
   font-size: 30px;
   border-radius: 1px solid;
   align-items: center;
   text-align: center;
-  color: #157347;
+  color: rgba(25, 135, 0.33);
 }
 .errorMessage {
   color: red;
@@ -22,4 +23,42 @@
 .admin-icon {
   margin-right: 8px;
   font-size: 40px;
+}
+
+.password-icon {
+  margin-left: -24px;
+  margin-top: 10px;
+  font-size: 17px;
+  color: rgba(25, 135, 0.33);
+}
+.password-icon:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 576px) {
+  .login-form-div {
+    width: 100%;
+    box-shadow: 0px 0px 0px 0px;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 577px) {
+  .login-form-div {
+    width: 60%;
+  }
+}
+@media (min-width: 769px) and (max-width: 992px) {
+  .login-form-div {
+    width: 50%;
+  }
+}
+@media (min-width: 992px) and (max-width: 1400px) {
+  .login-form-div {
+    width: 40%;
+  }
+}
+@media (min-width: 1400px) {
+  .login-form-div {
+    width: 30%;
+  }
 }

@@ -9,10 +9,21 @@ const Events = () => {
 
   const [event, setEvent] = useState([]);
 
-  const handleOnSubmit = (newEvent, e) => {
+  const handleOnSubmit = async (newEvent, e) => {
     setEvent([...event, { ...newEvent, id: nextId() }]);
     setIsStaffFormActive(false);
     e.target.reset();
+
+    await fetch(
+      "https://dashboard-b8e56-default-rtdb.asia-southeast1.firebasedatabase.app/event.json",
+      {
+        method: "POST",
+        body: JSON.stringify(event),
+        headers: {
+          "content-type": "application/json",
+        },
+      }
+    );
   };
   return (
     <div className="container">

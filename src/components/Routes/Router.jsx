@@ -1,6 +1,6 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import Details from "../details/Details";
+import Statistics from "../statistics/Statistics";
 import LoginForm from "../login/LoginForm";
 import Events from "../pages/events/Events";
 import Staff from "../pages/staff/Staff";
@@ -13,7 +13,7 @@ const Router = () => {
       <Routes>
         <Route path="/" element={<LoginForm />} />
         <Route path="/dashboard" element={<Sidebar />}>
-          <Route path={``} element={<Details />} />
+          <Route path={``} element={<Statistics />} />
           <Route path={`students`} element={<Students />}>
             {/* <Route path={`addStudent`} element={<AddStudentForm />} /> */}
           </Route>

@@ -3,6 +3,9 @@ import StaffForm from "./StaffForm";
 import { MdDeleteForever, MdEditOff } from "react-icons/md";
 import nextId from "react-id-generator";
 import "../Pages.scss";
+import "./StaffForm.scss";
+import Button from "../../button/Button";
+import { RiLoginCircleFill, RiLogoutCircleFill } from "react-icons/ri";
 
 const Staff = () => {
   const [isStaffFormActive, setIsStaffFormActive] = useState(false);
@@ -52,13 +55,23 @@ const Staff = () => {
 
   return (
     <>
-      <div className="container">
-        <button
+      <div className="container staff-table-container">
+        {/* <button
           className="btn mx-5 mt-5 mb-4 px-4 py-2 add-staff-student"
           onClick={() => setIsStaffFormActive(!isStaffFormActive)}
         >
           {isStaffFormActive ? "Go back" : "Add Staff"}
-        </button>
+        </button> */}
+        <div className="staff-go-back-button">
+          <Button
+            text={isStaffFormActive ? "Go back" : "Add Staff"}
+            handleClick={() => setIsStaffFormActive(!isStaffFormActive)}
+            className="btn"
+            icon={
+              isStaffFormActive ? <RiLoginCircleFill /> : <RiLogoutCircleFill />
+            }
+          />
+        </div>
 
         {isStaffFormActive ? (
           <StaffForm

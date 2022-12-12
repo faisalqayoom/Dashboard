@@ -1,6 +1,8 @@
+@import "../colors/Colors.scss";
+
 .sidebar-menu-item:hover {
   background-color: white;
-  color: blue;
+  color: $special;
   border-radius: 30px;
 }
 .admin-icon {
@@ -12,4 +14,7 @@
 }
 .admin-icon-text {
   text-decoration: none !important;
+}
+.sidebar-div {
+  min-height: 100vh;
 }

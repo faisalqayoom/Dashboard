@@ -1,4 +1,5 @@
-import './App.css';
+import './App.scss';
+import "./components/colors/Colors.scss"
 import "bootstrap/dist/css/bootstrap.min.css";
 import Router from './components/Routes/Router';
 
